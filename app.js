@@ -27,6 +27,7 @@ Module.onRuntimeInitialized = () => {
 
         document.getElementById("ai-choice").textContent = `AIの手: ${["グー", "チョキ", "パー"][aiMove]}`;
         document.getElementById("outcome").textContent = `結果: ${result}`;
-        document.getElementById("counts").textContent = `勝ち: ${kn} | 負け: ${mn} | あいこ: ${an}`;
+        document.getElementById("counts").textContent = `勝ち: ${mn} | 負け: ${kn} | あいこ: ${an}`;
+        document.getElementById("percent").textContent = `勝率: ${(mn / (mn + kn + an) * 100).toFixed(1)}%`;
     };
 };
