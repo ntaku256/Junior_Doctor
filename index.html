@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AIとじゃんけんしよう！</h1>
+    <div id="game-container">
+        <div id="controls">
+            <button onclick="play(0)">グー</button>
+            <button onclick="play(1)">チョキ</button>
+            <button onclick="play(2)">パー</button>
+        </div>
+        <div id="results">
+            <p id="ai-choice">AIの手: なし</p>
+            <p id="outcome">結果: なし</p>
+            <p id="counts">勝ち: 0 | 負け: 0 | あいこ: 0</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
