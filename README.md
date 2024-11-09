@@ -1,5 +1,137 @@
 ﻿# Junior_Doctor
 
+### キーボードから数値を入力
+```C
+#include <stdio.h>
+
+int main() 
+{
+    int a;
+
+    printf("データを入力しなさい\n");
+    scanf("%d", &a);
+
+    printf("入力した値は%dです\n", a);
+
+    return 0;
+}
+
+```
+
+<br>
+
+### 勉強時間が２時間以上ならば、「ゲームを1時間する」と表示するプログラム
+```C
+#include <stdio.h>
+
+int main() 
+{
+    int h;
+
+    printf("勉強時間を入力\n");
+    scanf("%d", &h);
+
+    if (h >= 2) {
+        printf("ゲームを1時間\n");
+    }
+
+    return 0;
+}
+
+```
+
+<br>
+
+### テストの点数が60点以上ならば、「合格」を表示し、​そうでなければ、「不合格」を表示するプログラム​
+```C
+#include <stdio.h>
+
+int main() 
+{
+    int t;
+
+    printf("点数を入力\n");
+    scanf("%d", &t);
+
+    if (t >= 60) {
+        printf("合格\n");
+    } 
+    else {
+        printf("不合格\n");
+    }
+
+    return 0;
+}
+
+```
+
+<br>
+
+### for文​-1
+```C
+#include <stdio.h>
+
+int main() 
+{
+    int i;
+
+    for (i = 1; i <= 10; i++) {
+        printf("こんにちは\n");
+    }
+
+    return 0;
+}
+
+```
+
+<br>
+
+### for文​-2
+```C
+#include <stdio.h>
+
+int main() 
+{
+    int i;
+
+    for (i = 1; i <= 10; i++) {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}
+
+```
+
+<br>
+
+### while文
+```C
+#include <stdio.h>
+
+int main() 
+{
+    int n;
+
+    printf("整数nを入力してください ---> ");
+    scanf("%d", &n);
+
+    while (n > 0) {
+        printf("入力した数は%dです。\n", n);
+        printf("整数nを入力してください ---> ");
+        scanf("%d", &n);
+    }
+
+    printf("終了します\n");
+
+    return 0;
+}
+
+
+```
+
+<br>
+
 ### G-1
 ```C
 #include<stdio.h> 
@@ -19,6 +151,8 @@ int main(){
       return 0;
 }
 ```
+
+<br>
 
 
 ### G-2
@@ -44,6 +178,8 @@ int  main(){
 
 ```
 
+<br>
+
 ### G-3
 ```C
 #include<stdio.h> 
@@ -65,6 +201,8 @@ int  main(){
 }
 
 ```
+
+<br>
 
 ### G-4
 ```C
@@ -177,7 +315,9 @@ int main(void){
 
 ```
 
-### じゃんけんシステム
+<br><br>
+
+# じゃんけんシステム
 
 ![](https://github.com/ntaku256/AI/blob/main/Source/%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%93%E3%82%B2%E3%83%BC%E3%83%A01.png)
 
