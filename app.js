@@ -7,23 +7,21 @@ Module.onRuntimeInitialized = () => {
     
     window.play = (playerMove) => {
         const aiMove = hand();
-        winlose(aiMove, playerMove);
+        let next_kn,next_mn,next_an;
+        next_kn,next_mn,next_an = winlose(aiMove, playerMove);
         
         let result;
-        if (aiMove === playerMove) {
-            result = "あいこ";
-            an++;
-        } else if (
-            (aiMove === 0 && playerMove === 1) || // AI: グー, Player: チョキ
-            (aiMove === 1 && playerMove === 2) || // AI: チョキ, Player: パー
-            (aiMove === 2 && playerMove === 0)    // AI: パー, Player: グー
-        ) {
+        if (next_kn>kn){
             result = "AIの勝ち";
-            kn++;
-        } else {
+        }else if(next_mn>mn){
             result = "あなたの勝ち";
-            mn++;
+        }else if(next_an>an){
+            result = "あいこ";
         }
+
+        kn = next_kn
+        mn = next_mn
+        an = next_an
 
         document.getElementById("ai-choice").textContent = `AIの手: ${["グー", "チョキ", "パー"][aiMove]}`;
         document.getElementById("outcome").textContent = `結果: ${result}`;
