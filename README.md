@@ -179,18 +179,20 @@ int main(void){
 
 ### じゃんけんシステム
 
-### Emscripten
-```
-git clone https://github.com/emscripten-core/emsdk.git
-cd emsdk
-emsdk install latest
-emsdk activate latest
-./emsdk_env.bat
-```
+![](https://github.com/ntaku256/AI/blob/main/Source/%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%93%E3%82%B2%E3%83%BC%E3%83%A01.png)
 
-```cmd
-emcc game.c -o game.js -s EXPORTED_FUNCTIONS="['_hand', '_winlose']" -s EXPORTED_RUNTIME_METHODS="['ccall','cwrap']"
-```
+<br>
 
+![](https://github.com/ntaku256/AI/blob/main/Source/%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%93%E3%82%B2%E3%83%BC%E3%83%A02.png)
 
-[とにかく楽してWindowsにC言語開発環境を作る](https://qiita.com/0Delta/items/b9459d70b1086ed17e51)
+<br>
+
+![](https://github.com/ntaku256/AI/blob/main/Source/%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%93%E3%82%B2%E3%83%BC%E3%83%A03.png)
+
+<br>
+
+![](https://github.com/ntaku256/AI/blob/main/Source/%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%93%E3%82%B2%E3%83%BC%E3%83%A04.png)
+
+<br>
+
+![](https://github.com/ntaku256/AI/blob/main/Source/%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%93%E3%82%B2%E3%83%BC%E3%83%A05.png)
