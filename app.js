@@ -25,6 +25,13 @@ Module.onRuntimeInitialized = () => {
             mn++;
         }
 
+        // Update AI's move display
+        const aiImages = ["gu.png", "choki.png", "pa.png"];
+        const aiImageElement = document.getElementById("ai-image");
+        aiImageElement.src = aiImages[aiMove];
+        aiImageElement.style.display = "block"; // Show the image
+
+        // Update result text and statistics
         document.getElementById("ai-choice").textContent = `AIの手: ${["グー", "チョキ", "パー"][aiMove]}`;
         document.getElementById("outcome").textContent = `結果: ${result}`;
         document.getElementById("counts").textContent = `勝ち: ${mn} | 負け: ${kn} | あいこ: ${an}`;

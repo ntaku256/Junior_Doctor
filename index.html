@@ -9,18 +9,28 @@
 <body>
     <h1>AIとじゃんけんしよう！</h1>
     <div id="game-container">
+        
+        <!-- Player choice buttons -->
         <div id="controls">
-            <button onclick="play(0)">グー</button>
-            <button onclick="play(1)">チョキ</button>
-            <button onclick="play(2)">パー</button>
+            <img src="gu.png" alt="グー" onclick="play(0)" class="choice-button">
+            <img src="choki.png" alt="チョキ" onclick="play(1)" class="choice-button">
+            <img src="pa.png" alt="パー" onclick="play(2)" class="choice-button">
         </div>
-        <div id="results">
+
+        <!-- Centered AI choice display -->
+        <div id="ai-display">
             <p id="ai-choice">AIの手: なし</p>
+            <img id="ai-image" src="pa.png" alt="AIの手" class="ai-move-image">
+        </div>
+
+        <!-- Game result and statistics -->
+        <div id="results">
             <p id="outcome">結果: なし</p>
             <p id="counts">勝ち: 0 | 負け: 0 | あいこ: 0</p>
             <p id="percent">勝率: 0%</p>
         </div>
     </div>
+
     <script src="game.js"></script>
     <script src="app.js"></script>
 </body>
