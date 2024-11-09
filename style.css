@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 #controls {
@@ -22,8 +22,8 @@ body {
 }
 
 .choice-button {
-    width: 160px;
-    height: 120px;
+    width: 150px;
+    height: 110px;
     cursor: pointer;
 }
 
@@ -40,8 +40,8 @@ body {
 }
 
 .ai-move-image {
-    width: 160px;
-    height: 120px;
+    width: 150px;
+    height: 110px;
     display: block;
 }
 

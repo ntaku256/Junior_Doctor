@@ -1,19 +1,4 @@
 ﻿# Junior_Doctor
-### Emscripten
-```
-git clone https://github.com/emscripten-core/emsdk.git
-cd emsdk
-emsdk install latest
-emsdk activate latest
-./emsdk_env.bat
-```
-
-```cmd
-emcc game.c -o game.js -s EXPORTED_FUNCTIONS="['_hand', '_winlose']" -s EXPORTED_RUNTIME_METHODS="['ccall','cwrap']"
-```
-
-
-[とにかく楽してWindowsにC言語開発環境を作る](https://qiita.com/0Delta/items/b9459d70b1086ed17e51)
 
 ### G-1
 ```C
@@ -191,3 +176,21 @@ int main(void){
 }
 
 ```
+
+### じゃんけんシステム
+
+### Emscripten
+```
+git clone https://github.com/emscripten-core/emsdk.git
+cd emsdk
+emsdk install latest
+emsdk activate latest
+./emsdk_env.bat
+```
+
+```cmd
+emcc game.c -o game.js -s EXPORTED_FUNCTIONS="['_hand', '_winlose']" -s EXPORTED_RUNTIME_METHODS="['ccall','cwrap']"
+```
+
+
+[とにかく楽してWindowsにC言語開発環境を作る](https://qiita.com/0Delta/items/b9459d70b1086ed17e51)
