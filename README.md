@@ -317,7 +317,11 @@ int main(void){
 
 <br><br>
 
-# じゃんけんシステム
+# じゃんけんゲーム
+
+URL: https://ntaku256.github.io/Junior_Doctor/
+
+<br>
 
 ![](https://github.com/ntaku256/AI/blob/main/Source/%E3%81%98%E3%82%83%E3%82%93%E3%81%91%E3%82%93%E3%82%B2%E3%83%BC%E3%83%A01.png)
 
