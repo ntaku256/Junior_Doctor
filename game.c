@@ -46,5 +46,4 @@ void winlose(int AI_t, int G_t) {
         else if (G_t == 1) { r_PA -= ALPHA * r_PA; mn++; }
         else an++;
     }
-    return kn,mn,an
 }
