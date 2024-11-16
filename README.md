@@ -132,6 +132,45 @@ int main()
 
 <br>
 
+### AIエキスパートシステム（性格診断）
+```C
+#include <stdio.h>
+
+int main() {
+    int h, s, r;
+
+    printf("人の話を素直に聞くか? Yes=1, No=2\n");
+    scanf("%d", &h);
+
+    if (h == 1) {
+        printf("寂しがり屋ですか? Yes=1, No=2\n");
+        scanf("%d", &s);
+
+        printf("診断結果：");
+        if (s == 1) {
+            printf("ハムスター\n");
+        } else {
+            printf("犬\n");
+        }
+    } else {
+        printf("リーダシップを持つか? Yes=1, No=2\n");
+        scanf("%d", &r);
+
+        printf("診断結果：");
+        if (r == 1) {
+            printf("ゴリラ\n");
+        } else {
+            printf("猫\n");
+        }
+    }
+
+    return 0;
+}
+
+```
+
+<br>
+
 ### G-1
 ```C
 #include<stdio.h> 
